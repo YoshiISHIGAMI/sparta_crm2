@@ -11,6 +11,11 @@
   </p>
 
   <p>
+    <%= f.label :company_id, '会社名' %><br>
+    <%= f.collection_select(:company_id, Company.all, :id, :name, class: "form-control") %>
+  </p>
+
+  <p>
     <%= f.label :email, '電子メール' %> <br>
     <%= f.text_field :email, class: 'form-control' %>
   </p>

@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'kaminari'
 
+gem 'ransack'
+
 group :development, :test do
   gem 'faker'              # 本物っぽいテストデータの作成
   gem 'faker-japanese'     # 本物っぽいテストデータの作成（日本語対応）

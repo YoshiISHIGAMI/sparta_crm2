@@ -19,8 +19,9 @@
           <td><%= customer.email %></td>
           <td><%= link_to '詳細', customer, class: "btn btn-primary" %></td>
         </tr>
-        <% end %>
+      <% end %>
       </tbody>
     </table>
+    <%= paginate @customers %>
   </div>
 </div>

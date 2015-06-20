@@ -30,10 +30,10 @@
     <table class="table table-striped">
       <head>
         <tr>
-          <th>姓</th>
-          <th>名</th>
-          <th>会社名</th>
-          <th>電子メール</th>
+          <th><%= sort_link(@q, :family_name, "姓") %></th>
+          <th><%= sort_link(@q, :given_name, "名") %></th>
+          <th><%= sort_link(@q, :company_name, "会社名") %></th>
+          <th><%= sort_link(@q, :email, "電子メール") %></th>
           <th>リンク</th>
         </tr>
       </head>

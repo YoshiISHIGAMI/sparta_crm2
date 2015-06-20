@@ -7,6 +7,7 @@
         <tr>
           <th>姓</th>
           <th>名</th>
+          <th>会社名</th>
           <th>電子メール</th>
           <th>リンク</th>
         </tr>
@@ -16,6 +17,7 @@
         <tr>
           <td><%= customer.family_name %></td>
           <td><%= customer.given_name %></td>
+          <td><%= customer.company.name %></td>
           <td><%= customer.email %></td>
           <td><%= link_to '詳細', customer, class: "btn btn-primary" %></td>
         </tr>

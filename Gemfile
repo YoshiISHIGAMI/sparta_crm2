@@ -24,9 +24,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'kaminari'
+
 group :development, :test do
   gem 'faker'              # 本物っぽいテストデータの作成
   gem 'faker-japanese'     # 本物っぽいテストデータの作成（日本語対応）
+end
+
+group :development do
+  gem 'rails-erd'
 end
 
 # Use ActiveModel has_secure_password

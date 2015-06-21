@@ -7,20 +7,30 @@
       <%= devise_error_messages! %>
 
       <div class="field form-group">
-        <%= f.label :email %><br />
+        <%= f.label :family_name, "姓" %><br />
+        <%= f.text_field :family_name, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :given_name, "名" %><br />
+        <%= f.text_field :given_name, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :email, "電子メール" %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control" %>
       </div>
 
       <div class="field form-group">
-        <%= f.label :password %>
+        <%= f.label :password, "パスワード" %>
         <% if @validatable %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <em>(<%= @minimum_password_length %> 文字以上が必要になります)</em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
       </div>
 
       <div class="field form-group">
-        <%= f.label :password_confirmation %><br />
+        <%= f.label :password_confirmation, "パスワード再入力" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
       </div>
 
